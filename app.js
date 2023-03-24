@@ -22,7 +22,7 @@ app.use(express.static("public"))
 
 app.get("/", (req, res) => {
     console.log(posts)
-    res.render("home", { homeStartingContent: homeStartingContent })
+    res.render("home", {posts: posts})
 })
 
 app.get("/about", (req, res) => {
