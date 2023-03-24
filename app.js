@@ -36,6 +36,7 @@ app.get("/compose", (req, res) => {
 
 app.post("/compose", (req, res) => {
     console.log(req.body.title)
+    console.log(req.body.post)
 })
 
 app.listen(8080, function () {
